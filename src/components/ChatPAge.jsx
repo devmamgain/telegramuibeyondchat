@@ -52,7 +52,7 @@ const ChatPage = ({ idget }) => {
 
   return (
     <div className="flex flex-col min-h-screen bg-telesmall-bg dark:bg-teleblack-bg">
-      <div className="flex-grow overflow-y-auto mb-10">
+      <div className="flex-grow overflow-y-auto mb-10 no-scrollbar">
         {chatdata.data?.map((alldata, index) => (
           <div key={index} className="p-2">
             {alldata.sender_id !== 1 ? (
